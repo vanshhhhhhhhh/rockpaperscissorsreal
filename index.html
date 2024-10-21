@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="heading">
+    <p>Rock Paper Scissors</p>
+</div>
+<div class="options">
+    <button onclick="
+    const value = Math.random();
+    let computermove = '';
+    if(value>=0&&value<=0.3)
+{
+    computermove = 'Scissors';
+}
+else if(value>=0.4&&value<0.7)
+{
+    computermove = 'Rock';
+}
+else{
+    computermove = 'Paper';
+}
+let result = '';
+if(computermove === 'Rock')
+{
+    result = 'Tie.'
+}    
+else if( computermove === 'Scissors')
+{
+    result = 'You won'
+}
+else if(computermove == 'Paper')
+{
+    result = 'You lost.'
+}    
+   alert(`You picked Rock.Computer picked ${computermove}.${result}`)
+    ">Rock</button>
+    <button onclick="
+       const value1 = Math.random();
+    let computermove1 = '';
+    if(value1>=0&&value1<=0.3)
+{
+    computermove1 = 'Scissors';
+}
+else if(value1>=0.4&&value1<0.7)
+{
+    computermove1 = 'Rock';
+}
+else{
+    computermove1 = 'Paper';
+}
+let result1 = '';
+if(computermove1 === 'Rock')
+{
+    result1 = 'You won.'
+}    
+else if( computermove1 === 'Scissors')
+{
+    result1 = 'You lost.'
+}
+else if(computermove1 == 'Paper')
+{
+    result1 = 'Tie.'
+}    
+   alert(`You picked Paper.Computer picked ${computermove1} . ${result1}`);
+    ">Paper</button>
+    <button onclick="
+       const valu = Math.random();
+    let computermov = '';
+    if(valu>=0&&valu<=0.3)
+{
+    computermov = 'Scissors';
+}
+else if(valu>=0.4&&valu<0.7)
+{
+    computermov = 'Rock';
+}
+else{
+    computermov = 'Paper';
+}
+let resul = '';
+if(computermov === 'Scissors')
+{
+    resul = 'Tie.'
+}    
+else if( computermov === 'Paper')
+{
+    resul = 'You won'
+}
+else if(computermov == 'Rock')
+{
+    resul = 'You lost.'
+}    
+   alert(`You picked Scissors.Computer picked ${computermov}.${ resul }`)
+    " >Scissors</button>
+    <script></script>
+</div>
+</body>
+</html>
